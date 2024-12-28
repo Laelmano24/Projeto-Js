@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Browse my projects</title>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+      display: flex;
+      height: 100dvh;
+      width: 100dvw;
+      justify-content: center;
+      align-items: center;
+      animation-name: ModifyBackground;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
+    }
+    main {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      gap: 20px;
+    }
+    a {
+      color: #fff;
+     font-weight: 500;
+      text-decoration: none;
+    }
+    .buttons-style {
+      background: #292929;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+    @keyframes ModifyBackground {
+      from {
+        background: #fff;
+      }
+      to {
+        background: #1E9B69;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main data-aos="fade-up" >
+    <h1>Browse my projects</h1>
+    <section>
+      <button class="buttons-style"><a href="/Chronometer-Simple/index.html">Chronometer-Simple</a></button>
+    </section>
+  </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js">
+</script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+  })
+</script>
+</html>
