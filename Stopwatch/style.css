@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100dvh;
+  width: 100dvw;
+  background: #141414;
+  justify-content: center;
+  align-items: center;
+}
+
+.Container-Main {
+  display: flex;
+  height: 100dvh;
+  width: 100dvw;
+  gap: 50px 0px;
+  flex-flow: column wrap;
+  background: #141414;
+  justify-content: center;
+  align-items: center;
+}
+
+.Container-Stopwatch {
+  background: #1F1F1F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  border: 5px solid #252525;
+  box-shadow: 0px 0px 40px #FFFFFF5E;
+}
+
+.Container-Buttons {
+  justify-content: space-evenly;
+  display: flex;
+  flex-flow: row wrap;
+  height: 100px;
+  width: 350px;
+  
+}
+
+#ConometerValue {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 60px;
+}
+#Button-Play {
+  background: #1ECD92;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0px 0px 30px #1ECD92B0;
+  transition: 0.5s all;
+  border: none;
+  border-radius: 50%;
+  height: 100%;
+  width: 30%;
+}
+#Button-Resert {
+  background: #404040;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0px 0px 50px #40404099;
+  border: none;
+  border-radius: 50%;
+  height: 100%;
+  width: 30%;
+}
+
